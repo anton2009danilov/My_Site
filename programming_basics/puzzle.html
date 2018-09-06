@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный сайт студента GeekBrains</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+        var score = 0;
+        
+        function checkAnswer(inputId, answers){
+            var userAnswer = document.getElementById(inputId).value;
+            userAnswer = userAnswer.toLocaleLowerCase();
+            for(var i = 0; i < answers.length; i++){
+                if(userAnswer == answers[i]){
+                    score++;
+                    break;
+                }
+            }
+        }
+        
+        function write(text){
+            document.getElementById("totalRightAnswers").innerHTML = text;
+        }
+        
+        function checkAnswers() {
+
+            checkAnswer("userAnswer1", ['доктор', 'врач', 'айболит']);
+            checkAnswer("userAnswer2",         ['водолаз', 'аквалангист', 'ныряльщик']);
+            checkAnswer("userAnswer3",         ['капитан']);
+            checkAnswer("userAnswer4",         ['бегемот', 'крокодил']);
+            
+            write("Количество правильных ответов: " + score + " из 4");
+            score = 0;
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <a href="index.html">Главная</a>
+        <a href="puzzle.html">Загадка</a>
+        <a href="guess.html">Угадайка</a>
+        <a href="guess_multiplayer.html">Угадайка для двух игроков</a>
+        <a href="password_generator.html">Генератор случайных паролей</a>
+    </div>    
+<div class="contentWrap">
+    <div class="content">
+        <div class="center">
+            <h1>Игра в загадки</h1>
+            
+            <div class="box">
+
+                <p id="totalRightAnswers"></p>
+                
+                <p>
+                    Кто в дни болезней<br>
+                    Всех полезней<br>
+                    И лечит нас от всех<br>
+                    Болезней?
+                </p>
+                <input type="text" id="userAnswer1">
+                
+                <p>
+                    Кто скафандр надевает<br>
+                    И на глубину ныряет?<br>
+                    Кто в ботинках со свинцом<br>
+                    Ходит там по дну пешком?
+                
+                </p>
+                <input type="text" id="userAnswer2">
+                
+                <p>
+                    Он морской, но добрый волк,<br>
+                    В синем море знает толк.<br>
+                    Приводил во много стран<br>
+                    Свой корабль …
+                </p>
+                <input type="text" id="userAnswer3">
+                
+                <p>
+                    У него огромный рот,<br>
+                    Он зовется …
+                </p>
+                <input type="text" id="userAnswer4">
+                
+                <br>
+                <a href="#" onClick="checkAnswers()">Ответить</a>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+        
+</div>    
+<div class="footer">
+        Copyright &copy; 2018 Anton Danilov
+</div>
+</body>
+</html>
