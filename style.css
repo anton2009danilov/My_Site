@@ -9,6 +9,12 @@ body {
   position: relative;
   color: #fff;
 }
+.content {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .content a {
   color: #2d52c9;
 }
