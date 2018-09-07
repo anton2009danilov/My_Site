@@ -7,11 +7,21 @@ body {
   background: linear-gradient(254deg, #2d52c9, #ffffff);
   height: 100%;
   position: relative;
+  color: #fff;
 }
-.content {
+.content a {
+  color: #2d52c9;
+}
+.content a:hover {
+  background-color: #7FFFD4;
+}
+.content a:active {
+  background-color: #a1fff6;
+}
+.footer {
   display: flex;
-  justify-content: center;
+  height: 4rem;
+  background: linear-gradient(254deg, #000e85, #ffffff);
   align-items: center;
-  position: absolute;
-  margin-top: 10rem;
+  justify-content: center;
 }

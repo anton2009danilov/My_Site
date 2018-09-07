@@ -1,15 +1,33 @@
 html, body {
-            height: 100%;
-        }
-        .wrapper {
-            background: linear-gradient(254deg, #2d52c9, #ffffff);
-            height: 100%;
-            position: relative;
-        }
-        .content {
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            position: absolute;
-            margin-top: 10rem;
-        }
+    height: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(254deg, #2d52c9, #ffffff);
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.content a {
+    color: #2d52c9;
+}
+
+.content a:hover {
+    background-color: #7FFFD4;
+}
+
+.content a:active {
+    background-color: #7FFFD4 + #222;
+}
+
+.footer {
+    display: flex;
+    height: 4rem;
+    background: linear-gradient(254deg, #2d52c9 - #444, #ffffff);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h5 {
+}
