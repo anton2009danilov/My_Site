@@ -2,8 +2,11 @@ html, body {
     height: 100%;
 }
 
+@site-color: #2d52c9;
+@bg-color: #7FFFD4;
+
 .wrapper {
-    background: linear-gradient(254deg, #2d52c9, #ffffff);
+    background: linear-gradient(254deg, @site-color, #ffffff);
     height: 100%;
     position: relative;
     color: #fff;
@@ -18,21 +21,21 @@ html, body {
 }
 
 .content a {
-    color: #2d52c9;
+    color: @site-color;
 }
 
 .content a:hover {
-    background-color: #7FFFD4;
+    background-color: @bg-color;
 }
 
 .content a:active {
-    background-color: #7FFFD4 + #222;
+    background-color: @bg-color + #222;
 }
 
 .footer {
     display: flex;
     height: 4rem;
-    background: linear-gradient(254deg, #2d52c9 - #444, #ffffff);
+    background: linear-gradient(254deg, @site-color - #444, #ffffff);
     align-items: center;
     justify-content: center;
 }
