@@ -10,14 +10,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    min-width: 1300px;
-    border-bottom: 1px solid #b5b7ba;
+.jumbotron {
+/*    min-width: 1300px;*/
+/*    border-bottom: 1px solid #b5b7ba;*/
     background-color: #dfdfdf;
-    margin: 0 auto;
-    height: 50px;
-    text-align: center;
-    padding-top: 18px;
+/*    margin: 0 auto;*/
+/*    height: 50px;*/
+/*    text-align: center;*/
+/*    padding-top: 18px;*/
 }
 
 .header .selected {
@@ -39,6 +39,11 @@ body {
     line-height: 30px;
     display: inline-block;
     padding-right: 40px;
+}
+
+.header a:hover,
+.list li a:hover {
+    color: #8888f6;
 }
 
 .header span {

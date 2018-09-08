@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+@site-color: #2d52c9;
+@bgHover-color: #7FFFD4;
+
+.wrapper {
+    font-family: 'Courier New';
+//    font-family: 'Consolas', sans-serif;
+    background: linear-gradient(254deg, @site-color, #ffffff);
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.header {
+background: linear-gradient(254deg, @site-color, #ffffff - #0a0);
+}
+
+.content {
+//    height: 20rem;
+//    display: flex;
+//    justify-content: center;
+    align-items: center;
+}
+
+.content a {
+    color: @site-color;
+}
+
+.content a:hover {
+    background-color: @bgHover-color;
+}
+
+.content a:active {
+    background-color: @bgHover-color + #222;
+}
+
+.footer {
+    display: flex;
+    height: 4rem;
+    background: linear-gradient(254deg, @site-color, #ffffff - #0b0);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
