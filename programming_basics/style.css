@@ -41,6 +41,11 @@ body {
     padding-right: 40px;
 }
 
+.header a:hover,
+.list li a:hover {
+    color: #8888f6;
+}
+
 .header span {
     padding: 0 38px;
 }
